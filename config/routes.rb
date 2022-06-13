@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # /@username/
   get '@:username', to: 'pages#user', as: 'user_page'
 
+  get '/demo', to: 'pages#demo'
   root 'pages#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
