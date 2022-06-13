@@ -12,10 +12,10 @@ class StoriesController < ApplicationController
 
   def create
     @story = current_user.stories.new(story_params)
-    @story.status = 'published' if params[:publish]
-
+    
     if @story.save
       if params[:publish]
+        @story.publish!
         redirect_to stories_path, notice: '已成功發佈故事'
       else
         redirect_to edit_story_path(@story), notice: '故事已儲存'
