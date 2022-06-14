@@ -11,6 +11,7 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'aasm', '~> 5.2'
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'babosa', '~> 2.0'
+gem 'paranoia', '~> 2.6'
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
