@@ -11,10 +11,12 @@ Rails.application.routes.draw do
       end
     end
 
-    # /api/stories/:id/clap
     resources :stories, only: [] do
+      # /api/stories/:id/clap
+      # /api/stories/:id/bookmark
       member do
         post :clap
+        post :bookmark
       end
     end
   end
