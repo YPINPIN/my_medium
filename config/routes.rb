@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   }
 
   namespace :api do
+    # /api/upload_image
+    post :upload_image, to: 'utils#upload_image' 
     # /api/users/:id/follow
     resources :users, only: [] do
       member do
