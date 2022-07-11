@@ -9,7 +9,7 @@
     <p><%= strip_tags(story.content).truncate(200) %></p>
     <p>
       最後編輯時間:<%= time_ago_in_words(story.updated_at) %>
-      <%= link_to '編輯', edit_story_path(story), class: 'button is-text is-small' %>
+      <%= link_to '編輯', edit_story_path(story), class: 'button is-text is-small', data:{ turbolinks: "false" } %>
       <%= link_to '刪除', story_path(story), method: 'delete', class: 'button is-danger is-small', data: { confirm: '確認刪除?!'} %>
     </p>
   </div>
