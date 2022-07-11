@@ -22,7 +22,7 @@
           <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. 
           </div>
-          <%= link_to '購買', payment_users_path(type: 'vip'), class: 'button is-danger is-fullwidth' %>
+          <%= link_to '購買', payment_users_path(type: 'vip'), class: 'button is-danger is-fullwidth', data:{ turbolinks: "false" } %>
         </div>
       </div>      
     </div>
@@ -49,7 +49,7 @@
           <div class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
           </div>
-          <%= link_to '購買', payment_users_path(type: 'platinum'), class: 'button is-success is-fullwidth' %>
+          <%= link_to '購買', payment_users_path(type: 'platinum'), class: 'button is-success is-fullwidth', data:{ turbolinks: "false" } %>
         </div>
       </div>
     </div>
